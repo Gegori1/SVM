@@ -1,9 +1,5 @@
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Images
-.png
-
-#AutodCad files
-.bak
-.dwg
+# Images and AutoCad files
+imagenes/**
