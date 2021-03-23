@@ -10,8 +10,8 @@ class SVM_general():
                     (Default = "linear"). 
         
                     acceptable parameters: 
-                        "additive_chi2", "chi2", "linear", "poly", 
-                        "polynomial", "rbf", "laplacian", "sigmoid", "cosine".
+                        "linear", "poly", "polynomial", "rbf", 
+                        "laplacian", "cosine".
         
                     for more information about individual kernels, visit the 
                     sklearn pairwise metrics affinities and kernels user guide.
