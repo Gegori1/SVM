@@ -8,3 +8,7 @@ Contain general information about the SVM
 ## Libraries-examples
 
 Contain SVM python code in library format and usage
+
+## SVR
+
+SVR mathematical derivation and libraries
