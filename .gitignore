@@ -3,3 +3,6 @@
 
 # Images and AutoCad files
 imagenes/**
+
+# Excel sensible data
+SVR/Libraries_prediction/Data**
