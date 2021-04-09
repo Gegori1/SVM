@@ -7,3 +7,4 @@
 {"target": -1.112742423148844, "params": {"C": 0.5, "epsilon": 0.01, "gamma": 0.02, "mu": -0.3}, "datetime": {"datetime": "2021-04-08 21:41:46", "elapsed": 721.092893, "delta": 102.84039}}
 
 the target is twiced the value. error in during calculation
+
