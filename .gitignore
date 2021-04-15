@@ -6,3 +6,4 @@ imagenes/**
 
 # Excel sensible data
 SVR/Libraries_prediction/Data**
+SVR/Bayesian_optimization/Data**
