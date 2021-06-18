@@ -2,8 +2,8 @@
 .ipynb_checkpoints
 
 # Images and AutoCad files
-imagenes/**
+imagenes/SVM/**
 
 # Excel sensible data
-SVR/Libraries_prediction/Data**
-SVR/Bayesian_optimization/Data**
+*.xlsx
+*.csv
