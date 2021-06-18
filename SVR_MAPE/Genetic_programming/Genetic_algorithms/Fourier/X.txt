@@ -1,0 +1,34 @@
+X:
+    
+    path_consumo = Path().resolve().parents[1] / "Data" / "Data1.xlsx"
+    consumo = pd.read_excel(path_consumo)
+    consumo = consumo.set_index("fecha").loc["2007-01-01":"2020-03-30"]
+
+    festivos=pd.read_excel(Path().resolve().parents[1] / "Data" /"Festivos.xlsx")
+    festivos2=pd.read_excel(Path().resolve().parents[1] / "Data" / "Festivos2.xlsx")
+
+    fest = triangulars().festivos(X = consumo, festivos = festivos, festivos2 = festivos2)
+
+    t = np.arange(1, consumo.size+1).reshape(-1, 1)
+    day = consumo.index.dayofyear
+    wend=consumo.index.weekday
+    wday=consumo.index.weekday
+    weekd = consumo.index.weekday
+    month = consumo.index.month
+
+    weekd1 = pd.get_dummies(weekd, prefix = "wday", drop_first = True)
+    weekd1.index = consumo.index
+
+    X = triangulars().diffseason(consumo)
+    # X1 = triangulars().diffclima(consumo)
+    X = pd.concat([X, weekd1], axis = 1)
+    X = pd.concat([X, fest], axis = 1)
+
+    X["t"] = t
+    X["day"] = day
+    X["month"] = month
+    X["weekd"] = weekd
+    X["wend"]=wend
+    X["wday"]=wday
+    X["wend"] = X["wend"].replace([0,1,2,3,4,5,6],[.5,0,0,0,.5,1,1])
+    X["wday"] = X["wday"].replace([0,1,2,3,4,5,6],[.5,1,1,1,.5,0,0])

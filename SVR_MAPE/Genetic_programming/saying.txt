@@ -1,0 +1,10 @@
+A genetic algorithm is a process in which a program evolve due to the combination of sensors and entities.
+
+the variables represent the sensors
+the functions the entities
+
+each function changes to a same dimension space
+
+in a sine(sin(x)) if we change the space sin(u), the u is transformed to a linear function
+
+SVM passes from a quadratic equation in the primal to a quadratic in the dual. 
