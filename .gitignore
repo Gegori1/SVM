@@ -7,3 +7,6 @@ imagenes/SVM/**
 # Excel sensible data
 *.xlsx
 *.csv
+
+#Models
+/SVR_MAPE/Genetic_programming/Models/**
